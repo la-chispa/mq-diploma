@@ -24,6 +24,27 @@ body {
 	font-family: "Open Sans", Arial, sans-serif;
 }
 
+/* Для проверки на соответствие макету */
+.checking {
+  position: relative;
+  width: 320px;
+}
+
+.checking::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  background-image: url("../surface_320.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+/* Для проверки на соответствие макету */
+
+
 .header {
 	position: relative;
 
