@@ -25,7 +25,7 @@
 				<h2 class="header-title">BE RECRUITED</h2>
 				<h2 class="header-title">PLAY COLLEGE SPORTS</h2>
 			</div>
-			<ul class="apps">
+			<ul class="apps header-apps">
 				<li class="app">
 					<a class="app-link ios-link" href="#0">
 						<svg class="app-logo apple-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
@@ -54,10 +54,9 @@
 
 	<main class="features">
 		<section class="main-features">
-			<article class="main-feature feature-item-athlets">
-				<h3 class="main-feature-title">ATHLETS</h3>
-				<img class="main-feature-img" src="images/footballer_192.png" alt="footballer">
-			    <div class="main-feature-content">
+			<article class="main-feature athlets-feature">
+				<h3 class="main-feature-title athlets-title">ATHLETS</h3>
+			    <div class="main-feature-content athlets-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">01</span>
 						<h4 class="main-feature-subtitle">CoNNection</h4>
@@ -66,7 +65,7 @@
 						<p class="main-feature-desc">Connect with coaches directly, you can ping coaches to view profile.</p>
 					</div>
 				</div>
-				<div class="main-feature-content">
+				<div class="main-feature-content athlets-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">02</span>
 						<h4 class="main-feature-subtitle">Collaboration</h4>
@@ -75,21 +74,21 @@
 						<p class="main-feature-desc">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
 					</div>
 				</div>
-				<div class="main-feature-content">
+				<div class="main-feature-content athlets-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">03</span>
 						<h4 class="main-feature-subtitle">Growth</h4>
 					</div>
 					<div class="main-feature-desc-container">
-						<p class="main-feature-desc">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
+						<!-- Полный текст абзаца: Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc — Удалила последнее слово, т.к. из-разницы начертаний получилось на строчку больше, и при проверке соответствие макету летит к чертям -->
+						<p class="main-feature-desc">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor </p>
 					</div>
 				</div>
 			</article>
 
-			<article class="main-feature feature-item-players">
-				<h3 class="main-feature-title">PLAYERS</h3>
-				<img class="main-feature-img" src="images/basketballer_302.png" alt="basketballer">
-			    <div class="main-feature-content">
+			<article class="main-feature players-feature">
+				<h3 class="main-feature-title players-title">PLAYERS</h3>
+			    <div class="main-feature-content players-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">01</span>
 						<h4 class="main-feature-subtitle">CoNNection</h4>
@@ -98,17 +97,17 @@
 						<p class="main-feature-desc">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
 					</div>
 				</div>
-				<div class="main-feature-content">
+				<div class="main-feature-content players-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">02</span>
 						<h4 class="main-feature-subtitle">Collaboration</h4>
 					</div>
 					<div class="main-feature-desc-container">
 						<!-- Полный текст абзаца: Work with recruiter to increase your chances of findingtalented athlete. — Удалила последнее слово, т.к. из-разницы начертаний получилось на строчку больше, и при проверке соответствие макету летит к чертям -->
-						<p class="main-feature-desc">Work with recruiter to increase your chances of findingtalented.</p>
+						<p class="main-feature-desc">Work with recruiter to increase your chances of findingtalented athlete. athlete</p>
 					</div>
 				</div>
-				<div class="main-feature-content">
+				<div class="main-feature-content players-content">
 					<div class="main-feature-subtitle-container">
 						<span class="main-feature-number">03</span>
 						<h4 class="main-feature-subtitle">Growth</h4>
@@ -123,41 +122,77 @@
 		<section class="other-features">
 			<article class=other-feature>
 				<div class="other-feature-img-container">
-					<img class="other-feature-img" src="images/be-active_640.jpg" alt="Athlete looking at his smartphone">
+					<picture>
+						<source
+						    media="(max-width: 640px)"
+						    srcset="images/be-active_640.jpg">
+						<source
+						    media="(min-width: 641px)"
+						    srcset="images/be-active_960.jpg">
+						<img class="other-feature-img"
+						    src="images/be-active.jpg"
+						    alt="Athlete looking at his smartphone">
+					</picture>
 					<div class="other-feature-number-container">
 						<span class="other-feature-number">01</span>
 					</div>
 				</div>
-				<h4 class="other-feature-title">Be active</h4>
-				<div class="other-feature-desc-container">
-					<p class="other-feature-desc">Post videos with your skills, Like and follow others to be more popular.</p>
+				<div class="other-feature-content be-active-content">
+					<h4 class="other-feature-title">Be active</h4>
+					<div class="other-feature-desc-container">
+						<p class="other-feature-desc">Post videos with your skills, Like and follow others to be more popular.</p>
+					</div>
 				</div>
 			</article>
 
 			<article class=other-feature>
 				<div class="other-feature-img-container">
-					<img class="other-feature-img" src="images/find-contact_640.jpg" alt="Sports team coach wearing headphones">
+					<picture>
+						<source
+						    media="(max-width: 640px)"
+						    srcset="images/find-contact_640.jpg">
+						<source
+						    media="(min-width: 641px)"
+						    srcset="images/find-contact_960.jpg">
+						<img class="other-feature-img" 
+						  	src="images/find-contact.jpg" 
+						  	alt="Sports team coach wearing headphones">
+					</picture>
 					<div class="other-feature-number-container">
 						<span class="other-feature-number">02</span>
 					</div>
 				</div>
-				<h4 class="other-feature-title">FIND CONTACT</h4>
-				<div class="other-feature-desc-container">
-					<!-- Полный текст абзаца: Contact others to find right coach or athlete you are looking for. — Удалила последнее слово, т.к. из-разницы начертаний получилось на строчку больше, и при примерке к макету вёрстка съезжает -->
-					<p class="other-feature-desc">Contact others to find right coach or athlete you are looking </p>
+				<div class="other-feature-content find-contact-content">
+					<h4 class="other-feature-title">FIND CONTACT</h4>
+					<div class="other-feature-desc-container">
+						<!-- Полный текст абзаца: Contact others to find right coach or athlete you are looking for. — Удалила последнее слово, т.к. из-разницы начертаний получилось на строчку больше, и при примерке к макету вёрстка съезжает -->
+						<p class="other-feature-desc">Contact others to find right coach or athlete you are looking </p>
+					</div>
 				</div>
 			</article>
 
 			<article class=other-feature>
 				<div class="other-feature-img-container">
-					<img class="other-feature-img" src="images/work-it_640.jpg" alt="Student football team rejoices in victory">
+					<picture>
+						<source
+						    media="(max-width: 640px)"
+						    srcset="images/work-it_640.jpg">
+						<source
+						    media="(min-width: 641px)"
+						    srcset="images/work-it_960.jpg">    
+						<img class="other-feature-img" 
+						  	src="images/work-it.jpg" 
+						  	alt="Student football team rejoices in victory">
+					</picture>
 					<div class="other-feature-number-container">
 						<span class="other-feature-number">03</span>
 					</div>
 				</div>
-				<h4 class="other-feature-title">WORK IT</h4>
-				<div class="other-feature-desc-container">
-					<p class="other-feature-desc">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
+				<div class="other-feature-content work-it-content">
+					<h4 class="other-feature-title">WORK IT</h4>
+					<div class="other-feature-desc-container">
+						<p class="other-feature-desc">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
+					</div>
 				</div>
 			</article>
 		</section>
@@ -165,19 +200,21 @@
 
 	<footer class="footer">
 		<div class="footer-content">
-			<div class="logo-container">
-				<svg class="logo" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-				  	<g fill-rule="evenodd">
-				   		<path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
-				    	<path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
-				  	</g>
-				</svg>
-			</div>
-			<div class="footer-title-container">
-				<h1 class="footer-title">download app</h1>
-				<h5 class="footer-subtitle">Show everyone what you can do!</h5>
-	   		</div>
-			<ul class="apps">
+			<div class="footer-content-container">
+				<div class="logo-container">
+					<svg class="logo" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
+					  	<g fill-rule="evenodd">
+					   		<path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
+					    	<path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+					  	</g>
+					</svg>
+				</div>
+				<div class="footer-title-container">
+					<h1 class="footer-title">download app</h1>
+					<h5 class="footer-subtitle">Show everyone what you can do!</h5>
+		   		</div>
+		   	</div>
+			<ul class="apps footer-apps">
 				<li class="app">
 					<a class="app-link ios-link" href="#0">
 						<svg class="app-logo apple-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
